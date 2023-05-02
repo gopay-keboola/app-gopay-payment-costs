@@ -31,8 +31,7 @@ class Component(ComponentBase):
         """
 
         # logging setup
-        logging.basicConfig(level=logging.DEBUG, stream=sys.stdout, datefmt='%Y-%m-%d %H:%M:%S%z',
-                            format='%(asctime)s | %(module)s | %(levelname)s | %(message)s')
+        logging.basicConfig(level=logging.DEBUG, stream=sys.stdout, datefmt='%Y-%m-%d %H:%M:%S%z', format='%(asctime)s | %(module)s | %(levelname)s | %(message)s')
 
         # check for missing configuration parameters
         params = self.configuration.parameters
